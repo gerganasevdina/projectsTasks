@@ -19,7 +19,11 @@ function solve(input) {
     }
 });
 
-console.log(bottles);
+let keys = Object.keys(bottles);
+for (let name of keys) {
+    let quantity = bottles[name];
+
+    console.log(`${name} => ${quantity}`);
 }
 
 solve(['orange => 2000',
